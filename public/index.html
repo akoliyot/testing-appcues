@@ -25,9 +25,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Appcues App</title>
-    <script src="//fast.appcues.com/87934.js" onload=""></script>
+    <script src="//fast.appcues.com/87934.js" onload="setupAppcues"></script>
     <script>
       function setupAppcues() {
+        console.log("Setting up Appcues");
         window.Appcues.page();
         window.Appcues.identify(
           "USER_101", // unique, required
